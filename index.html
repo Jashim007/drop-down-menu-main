@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="logo">
+        <h2 class="logo_text">Dropdown</h2>
+      </section>
+      <div aria-labelledby=""></div>
+      <nav
+        role="menubar"
+        class="nav_items"
+        aria-label="This is a menubar"
+        id=""
+      >
+        <ul class="list_items_parent">
+          <li class="list_item">
+            <a href="#home">Home</a>
+          </li>
+          <li class="list_item" id="about">
+            <a href="#about">About</a>
+          </li>
+          <li class="list_item" id="teams" tabindex="0">
+            <label> Teams</label>
+            <ul class="child_list_items">
+              <li><a href="#team1">Team 1</a></li>
+              <li><a href="#team2">Team 2</a></li>
+              <li><a href="#team3">Team 3</a></li>
+            </ul>
+          </li>
+          <li class="list_item">
+            <a href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <button aria-label="Blue" aria-labelledby="color">Red</button>
+    <span id="color">Yellow</span>
+  </body>
+  <script src="index.js"></script>
+</html>
